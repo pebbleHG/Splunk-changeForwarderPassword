@@ -1,5 +1,8 @@
 # Splunk-changeForwarderPassword
 App to change password on forwarders managed by deployment server
+Thank you Jimmy Maple https://github.com/jimmyatSplunk for providing me with initial script to start from
+
+** NOTE ** Windows batch file still not ready
 
 Use case: customer has multiple versions of Splunk Universal Forwarder in their environment; some have known passwords, and some don't.  They would like to consolidate to one password for all of them that is non-default.
 
