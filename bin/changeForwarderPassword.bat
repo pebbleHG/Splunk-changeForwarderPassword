@@ -3,6 +3,12 @@ REM Define the original and new passwords here. To use automatic password genera
 SET OLDPASS=changeme
 SET NEWPASS=auto
 
+REM Fork logic depending on Splunk version
+REM   if < 7.1.0, use splunk cmd to change password
+REM   if >= 7.1.0, use user-seed.conf
+
+REM Does %SPLUNK_HOME% get automatically set on windows installations?
+
 REM Settings for automatic password generation. Not used if NEWPASS is not set to 'auto'
 Setlocal EnableDelayedExpansion
 SET _RNDLength=16
