@@ -7,7 +7,9 @@ NEWPASS=auto
 #   if < 7.1.0, use splunk cmd to change password
 #   if >= 7.1.0, use user-seed.conf
 
-SPLUNK_HOME=/opt/splunk
+# what is the default path for AIX and Solaris?  If different, will need to check *nix platform first and then
+# reassign SPLUNK_HOME accordingly
+SPLUNK_HOME=/opt/splunkforwarder
 
 SPLUNK_VERSION=`/opt/splunk/bin/splunk version |sed -r 's/\w+\s([0-9]\.[0-9]).*/\1/'`
 VERSION_THRESHOLD=7.1
